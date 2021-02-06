@@ -1,0 +1,81 @@
+/* pages/order/order.wxss */
+.title1{
+  border: 1rpx solid #dddddd;
+  color: #576B95;
+  font-size: 30rpx;
+  display:flex;
+  justify-content: center;
+}
+
+.title{
+  margin: 30rpx;
+  font-size: 40rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.dateClass{
+  border: 1rpx solid #dddddd;
+  display:flex;
+  flex-direction:row;
+}
+
+.dateClass1{
+  font-size: 35rpx;
+  margin: 30rpx;
+  color: 	#696969;
+}
+
+
+.yourName{
+  border: 5rpx solid #dddddd;
+  margin-top: 30rpx;
+  display:flex;
+  flex-direction:row;
+}
+
+.chooseName{
+  margin: 30rpx;
+  margin-left: 30rpx;
+  font-size: 35rpx;
+  color: 	#696969;
+}
+
+.chooseName1{
+  margin: 30rpx;
+  margin-left: 20rpx;
+  font-size: 35rpx;
+  color: 	#F08080;
+}
+
+.sectionTitle{
+  margin-top: 10rpx;
+  margin-left: 30rpx;
+  color: #576B95;
+}
+
+.group{
+  margin-top: 10rpx;
+  border: 5rpx solid #dddddd;
+}
+
+
+
+.radioflex{
+  margin: 30rpx 0;
+  display: flex;
+  flex-direction: row;
+  padding: 5rpx;
+  
+}
+.position{
+  display: flex;
+  justify-content: center;
+}
+
+.allbutton{
+  display:flex;
+  flex-direction:row;
+  margin:30rpx;
+}

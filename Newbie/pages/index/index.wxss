@@ -1,0 +1,16 @@
+/* pages/order/order.wxss */
+
+.title{
+  border: 1rpx solid #dddddd;
+  color: #576B95;
+  font-size: 28rpx;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sign{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

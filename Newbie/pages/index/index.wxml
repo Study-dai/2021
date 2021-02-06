@@ -1,0 +1,16 @@
+<!--pages/order/order.wxml-->
+
+<view  class="title" style="margin: 50rpx 0">我要点餐</view>
+<view class="order" style="margin: 100rpx 0">
+  <view bindtap="click_order"><button size="default" type="primary">点餐</button></view>
+</view>
+
+<view class="title" style="margin: 50rpx 0">创建与统计（非创建者不要操作）</view>
+<view class="sign" style="margin: 30rpx 0">
+  <view bindtap="click_build"><button size="mini" type="warn">创建选项</button></view>
+  <view bindtap="click_statistics"><button size="mini" type="warn">统计结果</button></view>
+  <view bindtap="click_reset"><button size="mini" type="warn">重置统计</button></view>
+</view>
+
+
+

@@ -1,0 +1,13 @@
+<!--pages/code/code.wxml-->
+<view class="Toptitle">创建前请输入密码</view>
+<form bindsubmit="formSubmit">
+  <view class='content'>
+    <block wx:for="{{Length}}" wx:key="item">
+      <input class='iptbox' value="{{Value.length>=index+1?Value[index]:''}}" disabled password='{{ispassword}}' catchtap='Tap'></input>
+    </block>
+  </view>
+  <input name="password" password="{{true}}" class='ipt' maxlength="{{Length}}" focus="{{isFocus}}" bindinput="Focus"></input>
+  <view>
+    <button class="btn-area" type='primary' disabled='{{disabled}}' formType="primary" bindtap="getin">确定</button>
+  </view>
+</form>

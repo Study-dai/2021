@@ -1,0 +1,77 @@
+/* pages/build/build.wxss */
+.title1{
+  border: 1rpx solid #dddddd;
+  color: #576B95;
+  font-size: 30rpx;
+  display:flex;
+  justify-content: center;
+}
+
+input{
+  border: 5rpx solid #dddddd;
+  color: 	#F08080;
+}
+.Vendor_name{
+  height: 80rpx;
+  font-size: 40rpx;
+  color: 	#696969;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Vendor_name_input{
+  font-size: 35rpx;
+  height: 60rpx;
+}
+
+.dateClass{
+  border: 1rpx solid #dddddd;
+  display:flex;
+  flex-direction:row;
+}
+
+.dateClass1{
+  font-size: 35rpx;
+  margin: 30rpx;
+  color: 	#696969;
+}
+
+.dateClass2{
+  font-size: 35rpx;
+  margin: 30rpx;
+  color: 	#F08080;
+}
+
+.Options{
+  height: 80rpx;
+  font-size: 40rpx;
+  color: 	#696969;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Options_input{
+  font-size: 35rpx;
+  height: 60rpx;
+  color: 	#F08080;
+}
+
+.position{
+  display: flex;
+  justify-content: center;
+}
+
+.btn_area{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5rpx;
+}
+.yangshi{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+

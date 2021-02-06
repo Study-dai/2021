@@ -1,0 +1,74 @@
+/* pages/statistics/statistics.wxss */
+.title1{
+  border: 1rpx solid #dddddd;
+  color: #576B95;
+  font-size: 30rpx;
+  display:flex;
+  justify-content: center;
+}
+
+.title2{
+  font-size: 50rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20rpx;
+}
+
+.dateClass{
+  border: 1rpx solid #dddddd;
+  display:flex;
+  flex-direction:row;
+}
+
+.dateClass1{
+  font-size: 35rpx;
+  margin: 10rpx;
+  color: 	#696969;
+}
+
+.formcell{
+  border: 1rpx solid #dddddd;
+  margin: 10rpx;
+}
+
+.radioflex , .page_section_title{
+  margin: 20rpx;
+  display: flex;
+  flex-direction: row;
+  padding: 5rpx;
+  font-size: 40rpx;
+}
+
+.out {
+  margin-left: 10rpx;
+  margin-right:auto;
+  width:250px;
+  height:20px;
+  border:1px solid red;
+  border-radius:20px;
+  overflow:hidden;
+}
+
+.in {
+  height:100%;
+  background-color:red;
+}
+
+.people_number{
+  display:flex;
+  flex-direction:row;
+}
+
+.nameform{
+  margin: 30rpx;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+.new{
+  margin:30rpx;
+  display:flex;
+  flex-direction:row
+}

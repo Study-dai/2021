@@ -1,0 +1,22 @@
+{
+  "entryPagePath": "pages/index/index",
+  "pages": [
+    "pages/build/build",
+    "pages/index/index",
+    "pages/order/order",
+    "pages/statistics/statistics",
+    "pages/code/code",
+    "pages/code2/code2"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#F5F5F5",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "机电院点餐小程序1.0",
+    "navigationStyle": "default",
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "dark",
+    "backgroundColorTop": "#FFDEAD",
+    "backgroundColorBottom": "#FFA500"
+  },
+  "sitemapLocation": "sitemap94.json"
+}

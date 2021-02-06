@@ -1,0 +1,40 @@
+<!--pages/build/build.wxml-->
+<view  class="title1">创建页面</view>
+
+<view class="container">
+  <form class="page_body" bindsubmit="allsubmit" bindreset="allreset">
+    
+    <view class="Vendor_name">请输入店家名称：</view>
+    <view><input class="Vendor_name_input" value="{{Vendor_name}}" maxlength="20" placeholder="（1-20个字）" bindinput="bindtxt" name="input0" /></view>
+    
+    <view class="dateClass">
+      <view class="dateClass1">选择日期：</view>
+      <mp-cell prop="date" title="日期" ext-class="">
+        <picker data-field="date" mode="date" value="{{date}}" start="2016-01-01" end="2026-12-31" bindchange="bindDateChange">
+          <view class="dateClass2">{{build_date}}</view>
+        </picker>
+      </mp-cell>
+    </view>
+
+    <view class="Options">请创建选项：</view>
+    <input class="Options_input" maxlength="20" placeholder="  创建选项一（1-20个字）" value="{{option1}}" bindinput="bindtxt1" name="input1" />
+    <view class="position" bindtap="uploadimage1"><image wx:for="{{build_imagelist1}}" src="{{item}}"></image></view>
+
+    <input class="Options_input" maxlength="20" placeholder="  创建选项二（1-20个字）" value="{{option2}}" bindinput="bindtxt2" name="input2" />
+    <view class="position" bindtap="uploadimage2"><image wx:for="{{build_imagelist2}}" src="{{item}}"></image></view>
+
+    <input class="Options_input" maxlength="20" placeholder="  创建选项三（1-20个字）" value="{{option3}}" bindinput="bindtxt3" name="input3" />
+    <view class="position" bindtap="uploadimage3"><image wx:for="{{build_imagelist3}}" src="{{item}}"></image></view>
+
+    <input class="Options_input" maxlength="20" placeholder="  创建选项四（1-20个字）" value="{{option4}}" bindinput="bindtxt4" name="input4" />
+    <view class="position" bindtap="uploadimage4"><image wx:for="{{build_imagelist4}}" src="{{item}}"></image></view>
+
+    <view class="btn_area">
+      <button style="margin: 30rpx 0" type="primary" formType="submit">提交创建</button>
+      <button style="margin: 30rpx 0" type="warn" formType="reset">重置创建</button>
+      <button style="margin: 30rpx 0" type="default" bindtap="return">返回首页</button>
+    </view>
+    
+  </form>
+</view>
+

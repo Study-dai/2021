@@ -1,0 +1,95 @@
+<!--pages/statistics/statistics.wxml-->
+<view  class="title1">统计页面</view>
+<view class="title2">今日店家：{{statistics_shop_name}}</view>
+
+<view class="dateClass">
+  <view class="dateClass1">日期：</view>
+  <view class="dateClass1">{{statistics_date}}</view>
+  <view class="dateClass1">今日点餐一共：{{population1 + population2 + population3 + population4}}人</view>
+</view>
+
+<view class="section">
+  <view class="formcell">
+    <view class="radioflex">
+      <view>A:{{statistics_option_name1}}</view>
+    </view>
+
+    <view class="people_number">
+      <view class='out'>
+        <view class='in' style='width:{{population1 / sum * 100}}%'></view>
+      </view>
+      <view  style='margin-right: 60rpx'> 人数：{{population1}}</view>
+    </view>
+
+    <view class="nameform">
+      <view wx:for="{{listA}}">{{item}}</view>
+    </view>
+  </view>
+
+  <view class="formcell">
+    <view class="radioflex">
+      <view>B:{{statistics_option_name2}}</view>
+    </view>
+
+    <view class="people_number">
+      <view class='out'>
+        <view class='in' style='width:{{population2 / sum * 100}}%'></view>
+      </view>
+      <view  style='margin-right: 60rpx'> 人数：{{population2}}</view>
+    </view>
+
+    <view class="nameform">
+      <view wx:for="{{listB}}">{{item}}</view>
+    </view>
+
+  </view>
+
+  <view class="formcell">
+    <view class="radioflex">
+      <view>C:{{statistics_option_name3}}</view>
+    </view>
+
+    <view class="people_number">
+      <view class='out'>
+        <view class='in' style='width:{{population3 / sum * 100}}%'></view>
+      </view>
+      <view  style='margin-right: 60rpx'> 人数：{{population3}}</view>
+    </view>
+
+    <view class="nameform">
+      <view wx:for="{{listC}}">{{item}}</view>
+    </view>
+
+  </view>
+
+  <view class="formcell">
+    <view class="radioflex">
+      <view>D:{{statistics_option_name4}}</view>
+    </view>
+
+    <view class="people_number">
+      <view class='out'>
+        <view class='in' style='width:{{population4 / sum * 100}}%'></view>
+      </view>
+      <view  style='margin-right: 60rpx'> 人数：{{population4}}</view>
+    </view>
+
+    <view class="nameform">
+      <view wx:for="{{listD}}">{{item}}</view>
+    </view>
+  </view>
+</view>
+
+<view class="new">
+  <button type="primary" size="mini" bindtap="new">点击刷新</button>
+  <button type="primary" size="mini" bindtap="return">返回首页</button>
+</view>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+<!--pages/order/order.wxml-->
+<view  class="title1">点餐页面</view>
+
+<view class="title">今日店家：{{order_shop_name}}</view>
+
+<view class="dateClass">
+  <view class="dateClass1">日期：</view>
+  <view class="dateClass1">{{order_date}}</view>
+</view>
+
+<form bindsubmit="reg">
+  <view class="yourName">
+    <view class="chooseName" >请选择名字（必选）：</view>
+    <view class="chooseName1">
+      <picker bindchange="bindNameChange" value="{{nameIndex}}" range="{{names}}">
+        <view>{{names[nameIndex]}}</view>
+      </picker>
+    </view>
+  </view>
+
+  <view class="sectionTitle">请点餐（必选）</view>
+  
+  <view class="section">
+    <radio-group class="group" bindchange="radioChange" name="choose_result">
+      <view class="radioflex">
+        <radio class="radioPosition" value="A">A:{{order_option_name1}}</radio>
+      </view>
+      <view class="position"><image wx:for="{{order_imagelist1}}" src="{{item}}"></image></view>
+
+      <view class="radioflex">
+        <radio class="radioPosition" value="B"></radio>
+        <view>B:{{order_option_name2}}</view>
+      </view>
+      <view class="position"><image wx:for="{{order_imagelist2}}" src="{{item}}"></image></view>
+
+      <view class="radioflex">
+        <radio class="radioPosition" value="C"></radio>
+        <view>C:{{order_option_name3}}</view>
+      </view>
+      <view class="position"><image wx:for="{{order_imagelist3}}" src="{{item}}"></image></view>
+
+      <view class="radioflex">
+        <radio class="radioPosition" value="D"></radio>
+        <view>D:{{order_option_name4}}</view>
+      </view>
+      <view class="position"><image wx:for="{{order_imagelist4}}" src="{{item}}"></image></view>
+
+    </radio-group>
+  </view>
+  
+  <view class="allbutton">
+    <button type="primary" size="mini" form-type="submit" bindtap="up_result">确认提交</button>
+    <button type="default" size="mini" bindtap="to_statistics">查看统计</button>
+  </view>
+
+</form>
